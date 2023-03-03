@@ -44,6 +44,9 @@
     top: 66px;
     left: 383px;
     overflow: hidden;
+    -webkit-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+    -moz-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+    box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
   }
   .v3_9 {
     width: 278px;
@@ -359,6 +362,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+    -moz-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+    box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+   
     
   }
 
@@ -368,6 +375,7 @@
     background: blue;
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
   .cards_x {
@@ -375,6 +383,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+    -moz-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+    box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+  
   }
 
   .cards_x button {
@@ -383,6 +395,7 @@
     background: rgb(254, 140, 0);
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
   .cards_fun {
@@ -390,13 +403,19 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    -webkit-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+-moz-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+
   }
 
   .cards_fun button {
     font-size: 18px;
     width: 80px;
+    font-weight: bold;
     height: 35px;
     text-transform: uppercase;
+    cursor: pointer;
    
     color: white;
     
@@ -407,6 +426,10 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    -webkit-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+    -moz-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+    box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+  
   }
 
   .cards_pass button {
@@ -414,6 +437,8 @@
     width: 80px;
     height: 35px;
     text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
   }
 
   .cards_icon {
@@ -421,6 +446,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+-moz-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+
     
   }
 
@@ -430,6 +459,7 @@
     text-transform: uppercase;
     background: rgb(0, 255, 13);
     color: white;
+    cursor: pointer;
   }
 
   .cards_out {
@@ -437,23 +467,151 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(255,255,255,0);
   }
 
   .cards_out h3 {
     font-size: 20px;
     padding: 20px;
     text-transform: uppercase;
-    background: rgb(0, 242, 255);
-    color: white;
+    color: black;
     text-transform: uppercase;
   }
 
+  .v3_91 {
+    width: 91px;
+    height: 38px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 145px;
+    left: 576px;
+    overflow: hidden;
+  }
+
+  .v9_23 {
+    width: 91px;
+  height: 38px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 145px;
+  left: 745px;
+  overflow: hidden;
+  }
   @media screen and (max-width: 480px) {
     .v3_8 {
-      background-color: lightgreen;
+      width: 100%;
+      height: 100vh;
     }
   }
 
   .scaleDown {
     transform: scale(.7);
+  }
+
+  
+
+  .output_cards th {
+    padding-left: 15px;
+    
+    margin-top: 10px;
+    font-size: 15px;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+
+  .v12_6 {
+    width: 57px;
+    height: 57px;
+    background: rgb(255, 0, 0);
+    opacity: 1;
+    position: absolute;
+    top: 381px;
+    left: 691px;
+    border-top-left-radius: 42px;
+    font-weight: bold;
+    border-top-right-radius: 42px;
+    border-bottom-left-radius: 42px;
+    border-bottom-right-radius: 42px;
+    overflow: hidden;
+    -webkit-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+-moz-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .v12_6 h3 {
+    color: white;
+    
+  }
+
+  .output_cards td {
+    padding-left: 10px;
+    
+    margin-top: 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+
+  .v10 {
+    width: 40px;
+    height: 40px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 300px;
+    left: 588px;
+    border-radius: 50%;
+
+  }
+
+  .v11 {
+    width: 40px;
+    height: 40px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 308px;
+    left: 805px;
+    border-radius: 50%;
+  }
+
+  .v12 {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    position: absolute;
+    top: 357px;
+    left: 646px;
+    border-radius: 50%;
+  }
+
+  .v13 {
+    width: 30px;
+    height: 30px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 353px;
+    left: 734px;
+    border-radius: 50%;
+  }
+
+  .btn_trigger {
+    background: purple;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    -webkit-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+-moz-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
   }
