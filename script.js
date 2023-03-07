@@ -34,6 +34,11 @@ let row_13 = document.getElementById('row_value_13');
 let row_14 = document.getElementById('row_value_14');
 let row_15 = document.getElementById('row_value_15');
 let row_16 = document.getElementById('row_value_16');
+
+let row_17 = document.getElementById('row_value_17');
+let row_18 = document.getElementById('row_value_18');
+let row_19 = document.getElementById('row_value_19');
+let row_20 = document.getElementById('row_value_20');
 let stop = document.getElementById('stop');
 let w = document.getElementById('w');
 let n = document.getElementById('n');
@@ -156,8 +161,8 @@ play.addEventListener('click', ()=>{
    console.log(l);
    console.log(o);
   
-   if(i < 16){
-   if(out_1.textContent == 'W' ){
+   if(i <=20){
+   if(out_1.textContent == 'W' && i==1 ){
     out_1.innerText = "N";
     let j1 = out_2.textContent + out_3.textContent;
   row_1.innerText = j1;
@@ -248,10 +253,34 @@ play.addEventListener('click', ()=>{
   row_15.innerText = j1;
   out_2.innerText = "";
   out_3.innerText = "";
-   }else {
+   }else if(i==16){
     out_1.innerText = "W";
     let j1 = out_2.textContent + out_3.textContent;
   row_16.innerText = j1;
+  out_2.innerText = "";
+  out_3.innerText = "";
+   }else if(i==17){
+    out_1.innerText = "N";
+    let j1 = out_2.textContent + out_3.textContent;
+  row_17.innerText = j1;
+  out_2.innerText = "";
+  out_3.innerText = "";
+   }else if(i==18){
+    out_1.innerText = "S";
+    let j1 = out_2.textContent + out_3.textContent;
+  row_18.innerText = j1;
+  out_2.innerText = "";
+  out_3.innerText = "";
+   }else if(i==19){
+    out_1.innerText = "E";
+    let j1 = out_2.textContent + out_3.textContent;
+  row_19.innerText = j1;
+  out_2.innerText = "";
+  out_3.innerText = "";
+   }else {
+    out_1.innerText = "W";
+    let j1 = out_2.textContent + out_3.textContent;
+  row_20.innerText = j1;
   out_2.innerText = "";
   out_3.innerText = "";
   i=0;
@@ -272,11 +301,15 @@ play.addEventListener('click', ()=>{
   row_14.innerText = "";
   row_15.innerText = "";
   row_16.innerText = "";
+  row_17.innerText = "";
+  row_18.innerText = "";
+  row_19.innerText = "";
+  row_20.innerText = "";
    }
 }
 
-if(l < 16){
-    if(out_1.textContent == 'S' ){
+if(l <= 20){
+    if(out_1.textContent == 'S'  && l==1 ){
         out_1.innerText = "W";
         let j1 = out_2.textContent + out_3.textContent;
       row_4.innerText = j1;
@@ -358,10 +391,34 @@ if(l < 16){
        }else if(l==14){
         out_1.innerText = "N";
         let j1 = out_2.textContent + out_3.textContent;
-      row_1.innerText = j1;
+      row_17.innerText = j1;
       out_2.innerText = "";
       out_3.innerText = "";
        }else if(l==15){
+        out_1.innerText = "E";
+        let j1 = out_2.textContent + out_3.textContent;
+      row_18.innerText = j1;
+      out_2.innerText = "";
+      out_3.innerText = "";
+       }else if(l==16){
+        out_1.innerText = "S";
+        let j1 = out_2.textContent + out_3.textContent;
+      row_19.innerText = j1;
+      out_2.innerText = "";
+      out_3.innerText = "";
+       }else if(l==17){
+        out_1.innerText = "W";
+        let j1 = out_2.textContent + out_3.textContent;
+      row_20.innerText = j1;
+      out_2.innerText = "";
+      out_3.innerText = "";
+       }else if(l==18){
+        out_1.innerText = "N";
+        let j1 = out_2.textContent + out_3.textContent;
+      row_1.innerText = j1;
+      out_2.innerText = "";
+      out_3.innerText = "";
+       }else if(l==19){
         out_1.innerText = "E";
         let j1 = out_2.textContent + out_3.textContent;
       row_2.innerText = j1;
@@ -391,11 +448,15 @@ if(l < 16){
       row_14.innerText = "";
       row_15.innerText = "";
       row_16.innerText = "";
+      row_17.innerText = "";
+  row_18.innerText = "";
+  row_19.innerText = "";
+  row_20.innerText = "";
        }
 }
 
-if(o < 16){
-    if(out_1.textContent == 'E' ){
+if(o <=20){
+    if(out_1.textContent == 'E'  && o==1){
         out_1.innerText = "S";
         let j1 = out_2.textContent + out_3.textContent;
       row_3.innerText = j1;
@@ -483,6 +544,30 @@ if(o < 16){
        }else if(o==15){
         out_1.innerText = "N";
         let j1 = out_2.textContent + out_3.textContent;
+      row_17.innerText = j1;
+      out_2.innerText = "";
+      out_3.innerText = "";
+       }else if(o==16){
+        out_1.innerText = "E";
+        let j1 = out_2.textContent + out_3.textContent;
+      row_18.innerText = j1;
+      out_2.innerText = "";
+      out_3.innerText = "";
+       }else if(o==17){
+        out_1.innerText = "S";
+        let j1 = out_2.textContent + out_3.textContent;
+      row_19.innerText = j1;
+      out_2.innerText = "";
+      out_3.innerText = "";
+       }else if(o==18){
+        out_1.innerText = "W";
+        let j1 = out_2.textContent + out_3.textContent;
+      row_20.innerText = j1;
+      out_2.innerText = "";
+      out_3.innerText = "";
+       }else if(o==19){
+        out_1.innerText = "N";
+        let j1 = out_2.textContent + out_3.textContent;
       row_1.innerText = j1;
       out_2.innerText = "";
       out_3.innerText = "";
@@ -510,11 +595,15 @@ if(o < 16){
       row_14.innerText = "";
       row_15.innerText = "";
       row_16.innerText = "";
+      row_17.innerText = "";
+  row_18.innerText = "";
+  row_19.innerText = "";
+  row_20.innerText = "";
        }
 }
 
-if(k < 16){
-    if(out_1.textContent == 'N' ){
+if(k <=20){
+    if(out_1.textContent == 'N'  && k==1){
         out_1.innerText = "E";
         let j1 = out_2.textContent + out_3.textContent;
       row_2.innerText = j1;
@@ -608,6 +697,30 @@ if(k < 16){
        }else if(k==16){
         out_1.innerText = "N";
         let j1 = out_2.textContent + out_3.textContent;
+      row_17.innerText = j1;
+      out_2.innerText = "";
+      out_3.innerText = "";
+       }else if(k==17){
+        out_1.innerText = "E";
+        let j1 = out_2.textContent + out_3.textContent;
+      row_18.innerText = j1;
+      out_2.innerText = "";
+      out_3.innerText = "";
+       }else if(k==18){
+        out_1.innerText = "S";
+        let j1 = out_2.textContent + out_3.textContent;
+      row_19.innerText = j1;
+      out_2.innerText = "";
+      out_3.innerText = "";
+       }else if(k==19){
+        out_1.innerText = "W";
+        let j1 = out_2.textContent + out_3.textContent;
+      row_20.innerText = j1;
+      out_2.innerText = "";
+      out_3.innerText = "";
+       }else{
+        out_1.innerText = "N";
+        let j1 = out_2.textContent + out_3.textContent;
       row_1.innerText = j1;
       out_2.innerText = "";
       out_3.innerText = "";
@@ -629,6 +742,10 @@ if(k < 16){
       row_14.innerText = "";
       row_15.innerText = "";
       row_16.innerText = "";
+      row_17.innerText = "";
+  row_18.innerText = "";
+  row_19.innerText = "";
+  row_20.innerText = "";
        }
 }
 }

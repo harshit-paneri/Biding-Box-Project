@@ -561,6 +561,19 @@ display: flex;
   }
 
   .v10 {
+    width: 30px;
+    height: 30px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 393px;
+    left: 568px;
+    border-radius: 50%;
+
+
+  }
+
+  .v10 {
     width: 40px;
     height: 40px;
     background: rgba(217,217,217,1);
@@ -614,4 +627,9 @@ display: flex;
     -webkit-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
 -moz-box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
 box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
+  }
+
+ 
+  .row_table {
+    padding: 10px;
   }
