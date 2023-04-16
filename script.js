@@ -44,6 +44,8 @@ let w = document.getElementById('w');
 let n = document.getElementById('n');
 let s = document.getElementById('s');
 let e = document.getElementById('e');
+let pre = document.getElementById('pre');
+let ford = document.getElementById('ford');
 let i,k,l,o;
 
 one.addEventListener('click', ()=>{
@@ -80,12 +82,15 @@ alertt.addEventListener('click', ()=>{
 })
 pass.addEventListener('click', ()=>{
     console.log("I am pass");
+    alert("Pass Has been played");
 })
 x.addEventListener('click', ()=>{
     console.log("I am double the value");
+    alert("Double the value");
 })
 xx.addEventListener('click', ()=>{
     console.log("I am re double the value");
+    alert("Redouble the value");
 })
 nt.addEventListener('click', ()=>{
     console.log("I am NT");
@@ -97,16 +102,16 @@ heart.addEventListener('click', ()=>{
 })
 spade.addEventListener('click', ()=>{
     console.log("I am spade");
-    out_3.innerText = "🍃";
+    out_3.innerText = "♠";
 })
 diamond.addEventListener('click', ()=>{
     console.log("I am diamond");
-    out_3.innerText = "❖";
+    out_3.innerText = "♦";
 })
 
 tree.addEventListener('click', ()=>{
     console.log("I am tree");
-    out_3.innerText = "🌲";
+    out_3.innerText = "♣";
 })
 
    
@@ -148,7 +153,6 @@ e.addEventListener('click', ()=>{
    out_1.innerText = j;
    o = 0;
 })
-
 
 
 play.addEventListener('click', ()=>{
@@ -449,9 +453,9 @@ if(l <= 20){
       row_15.innerText = "";
       row_16.innerText = "";
       row_17.innerText = "";
-  row_18.innerText = "";
-  row_19.innerText = "";
-  row_20.innerText = "";
+      row_18.innerText = "";
+      row_19.innerText = "";
+      row_20.innerText = "";
        }
 }
 
@@ -596,9 +600,9 @@ if(o <=20){
       row_15.innerText = "";
       row_16.innerText = "";
       row_17.innerText = "";
-  row_18.innerText = "";
-  row_19.innerText = "";
-  row_20.innerText = "";
+      row_18.innerText = "";
+      row_19.innerText = "";
+      row_20.innerText = "";
        }
 }
 
@@ -743,11 +747,26 @@ if(k <=20){
       row_15.innerText = "";
       row_16.innerText = "";
       row_17.innerText = "";
-  row_18.innerText = "";
-  row_19.innerText = "";
-  row_20.innerText = "";
+      row_18.innerText = "";
+      row_19.innerText = "";
+      row_20.innerText = "";
        }
 }
 }
 
 )
+
+pre.addEventListener('click', ()=>{
+  console.log("this is the previous button");
+ 
+})
+
+ford.addEventListener('click', ()=>{
+  console.log("this is the forward button");
+  if(row_20.textContent = ""){
+    console.log("this is the previous button under the if statement");
+}else {
+console.log("this else part pevious");
+}
+})
+
