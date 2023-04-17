@@ -1,3 +1,4 @@
+// describing all the varibles used in the frontend part
 let one = document.getElementById('one');
 let two = document.getElementById('two');
 let three = document.getElementById('three');
@@ -47,6 +48,8 @@ let e = document.getElementById('e');
 let pre = document.getElementById('pre');
 let ford = document.getElementById('ford');
 let i,k,l,o;
+
+// adding the event listner to the buttons which is used in the front end
 
 one.addEventListener('click', ()=>{
     console.log("I am 1");
@@ -154,6 +157,8 @@ e.addEventListener('click', ()=>{
    o = 0;
 })
 
+
+// making the play event run through if else conditions
 
 play.addEventListener('click', ()=>{
    i++;
@@ -756,6 +761,9 @@ if(k <=20){
 
 )
 
+
+// previous and froward btn event listner
+
 pre.addEventListener('click', ()=>{
   console.log("this is the previous button");
  
@@ -769,4 +777,5 @@ ford.addEventListener('click', ()=>{
 console.log("this else part pevious");
 }
 })
+
 
