@@ -635,7 +635,36 @@ box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.44);
     padding: 10px;
   }
 
-  
+  @media only screen 
+  and (min-device-width: 220px) 
+  and (max-device-width: 440px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .v1_3 {
+      -webkit-box-shadow: 0px rgb(255,255,255);
+-moz-box-shadow:  0px rgb(255,255,255);
+box-shadow:  0px rgb(255,255,255);
+    }
+    .v3_8 {
+      background-image: linear-gradient(#fff,#fff);
+    }
+    
+
+    .v5_39 {
+
+      display: none;
+      }
+      .scaleDown {
+        height: 100vh;
+    transform: scale(0.6);
+    position: relative;
+    right: 365px;
+    bottom: 120px;
+}
+}
+
+
 
   @media only screen 
   and (min-device-width: 270px) 
