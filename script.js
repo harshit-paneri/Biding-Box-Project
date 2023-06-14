@@ -170,6 +170,54 @@ e.addEventListener('click', ()=>{
 
 let bidValues = ["1NT", "1♠", "1❤️", "1♦", "1♣", "2NT", "2♠", "2❤️", "2♦", "2♣", "3NT", "3♠", "3❤️", "3♦", "3♣", "4NT", "4♠", "4❤️", "4♦", "4♣", "5NT", "5♠", "5❤️", "5♦", "5♣", "6NT", "6♠", "6❤️", "6♦", "6♣", "7NT", "7♠", "7❤️", "7♦", "7♣"];
 
+// let bidValues = ["1NT","2NT","3NT","4NT","5NT","6NT","7NT","1♠","2♠","3♠","4♠","5♠","6♠","7♠","1❤️","2❤️","3❤️","4❤️","5❤️","6❤️","7❤️","1♦","2♦","3♦","4♦","5♦","6♦","7♦","1♣","2♣","3♣","4♣","5♣","6♣","7♣"];
+// const bidPowers = {
+//     '1NT': 15,
+//     '1♠': 14,
+//     '1❤️': 13,
+//     '1♦': 12,
+//     '1♣': 11,
+//     '2NT': 20,
+//     '2♠': 19,
+//     '2❤️': 18,
+//     '2♦': 17,
+//     '2♣': 16,
+//     '3NT': 25,
+//     '3♠': 24,
+//     '3❤️': 23,
+//     '3♦': 22,
+//     '3♣': 21,
+//     '4NT': 30,
+//     '4♠': 29,
+//     '4❤️': 28,
+//     '4♦': 27,
+//     '4♣': 26,
+//     '5NT': 35,
+//     '5♠': 34,
+//     '5❤️': 33,
+//     '5♦': 32,
+//     '5♣': 31,
+//     '6NT': 40,
+//     '6♠': 39,
+//     '6❤️': 38,
+//     '6♦': 37,
+//     '6♣': 36,
+//     '7NT': 45,
+//     '7♠': 44,
+//     '7❤️': 43,
+//     '7♦': 42,
+//     '7♣': 41
+//   };
+
+// const bids = [
+//   "1NT", "1S", "1H", "1D", "1C",
+//   "2NT", "2S", "2H", "2D", "2C",
+//   "3NT", "3S", "3H", "3D", "3C",
+//   "4NT", "4S", "4H", "4D", "4C",
+//   "5NT", "5S", "5H", "5D", "5C",
+//   "6NT", "6S", "6H", "6D", "6C",
+//   "7NT", "7S", "7H", "7D", "7C"
+// ];
 let currentBid = ""; // This variable will hold the current bid value.
 
 function makeBid(bid) {
@@ -299,18 +347,18 @@ play.addEventListener('click', ()=>{
      
   if (bidValues.includes(j1)) {
     // Check if the bid is higher than the current bid.
-    if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+   // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
       // Update the current bid.
       currentBid = j1;
       // Display the current bid.
       console.log("Current bid: " + currentBid);
       row_1.innerText = j1;
-    } else {
+ //   } else {
       // Display an error message if the bid is not higher than the current bid.
-      console.log("Invalid bid. Please make a higher bid.");
-      alert("Invalid bid. Please make a higher bid.")
-      i--;
-    }
+      // console.log("Invalid bid. Please make a higher bid.");
+      // alert("Invalid bid. Please make a higher bid.")
+    //   i--;
+    // }
   } else {
     // Display an error message if the bid is not valid.
     if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -332,18 +380,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+    //  if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_2.innerText = j1;
-      } else {
+    //  } else {
         // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+        // console.log("Invalid bid. Please make a higher bid.");
+        // alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
       if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -364,18 +412,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+     // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_3.innerText = j1;
-      } else {
+    //  } else {
         // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
       if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -396,18 +444,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+    //  if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_4.innerText = j1;
-      } else {
+     // } else {
         // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -427,18 +475,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+     // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_5.innerText = j1;
-      } else {
+    //  } else {
         // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -458,18 +506,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+     // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_6.innerText = j1;
-      } else {
+     // } else {
         // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -489,18 +537,18 @@ play.addEventListener('click', ()=>{
     
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_7.innerText = j1;
-      } else {
+      // } else {
         // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -520,18 +568,18 @@ play.addEventListener('click', ()=>{
     
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_8.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -551,18 +599,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_9.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -582,18 +630,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_10.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -613,18 +661,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_11.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -644,18 +692,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_12.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -675,18 +723,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_13.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -706,18 +754,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_14.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -737,18 +785,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_15.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -768,18 +816,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_16.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -799,18 +847,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_17.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -830,18 +878,18 @@ play.addEventListener('click', ()=>{
     
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_18.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -861,18 +909,18 @@ play.addEventListener('click', ()=>{
     
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_19.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -892,18 +940,18 @@ play.addEventListener('click', ()=>{
    
     if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_20.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        i--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   i--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
      if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -948,18 +996,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
       if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_4.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        l--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   l--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
       if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -978,18 +1026,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
       if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_5.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        l--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   l--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
       if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1008,18 +1056,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_6.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        l--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   l--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
       if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1039,18 +1087,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
       if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_7.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        l--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   l--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
       if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1069,18 +1117,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
       if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_8.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        l--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   l--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
       if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1099,18 +1147,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
       if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_9.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        l--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   l--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
       if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1129,18 +1177,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
      if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_10.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        l--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   l--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
       if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1159,18 +1207,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
       if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_11.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        l--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   l--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
       if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1189,18 +1237,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
       if (bidValues.includes(j1)) {
       // Check if the bid is higher than the current bid.
-      if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+      // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
         // Update the current bid.
         currentBid = j1;
         // Display the current bid.
         console.log("Current bid: " + currentBid);
         row_12.innerText = j1;
-      } else {
-        // Display an error message if the bid is not higher than the current bid.
-        console.log("Invalid bid. Please make a higher bid.");
-        alert("Invalid bid. Please make a higher bid.")
-        l--;
-      }
+      // } else {
+      //   // Display an error message if the bid is not higher than the current bid.
+      //   console.log("Invalid bid. Please make a higher bid.");
+      //   alert("Invalid bid. Please make a higher bid.")
+      //   l--;
+      // }
     } else {
       // Display an error message if the bid is not valid.
       if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1219,18 +1267,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_13.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            l--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   l--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1249,18 +1297,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_14.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            l--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   l--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1279,18 +1327,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_15.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            l--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   l--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1309,18 +1357,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_16.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            l--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   l--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1339,18 +1387,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_17.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            l--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   l--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1369,18 +1417,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_18.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            l--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   l--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1399,18 +1447,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_19.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            l--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   l--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1429,18 +1477,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_20.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            l--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   l--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1459,18 +1507,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_1.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            l--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   l--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1489,18 +1537,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_2.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            l--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   l--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1519,18 +1567,18 @@ if(l <= 20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_3.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            l--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   l--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1575,18 +1623,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_3.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1605,18 +1653,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_4.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1635,18 +1683,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_5.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1666,18 +1714,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_6.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1696,18 +1744,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_7.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1726,18 +1774,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_8.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1756,18 +1804,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_9.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1786,18 +1834,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_10.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1816,18 +1864,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_11.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1845,18 +1893,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_12.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1874,18 +1922,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_13.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1903,18 +1951,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_14.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1932,18 +1980,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_15.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1961,18 +2009,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_16.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -1990,18 +2038,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_17.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2019,18 +2067,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_18.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2048,18 +2096,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_19.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2077,18 +2125,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_20.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2106,18 +2154,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_1.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2135,18 +2183,18 @@ if(o <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_2.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            o--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   o--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2190,18 +2238,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_2.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
           if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2219,18 +2267,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_3.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2248,18 +2296,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_4.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2278,18 +2326,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_5.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2307,18 +2355,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_6.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2336,18 +2384,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_7.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2365,18 +2413,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_8.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2394,18 +2442,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_9.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2423,18 +2471,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_10.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2452,18 +2500,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_11.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2481,18 +2529,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_12.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2510,18 +2558,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_13.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2539,18 +2587,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_14.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2568,18 +2616,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_15.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2597,18 +2645,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_16.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2626,18 +2674,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_17.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2655,18 +2703,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_18.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2684,18 +2732,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_19.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2713,18 +2761,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_20.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2742,18 +2790,18 @@ if(k <=20){
         let j1 = out_2.textContent + out_3.textContent;
         if (bidValues.includes(j1)) {
           // Check if the bid is higher than the current bid.
-          if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
+          // if (bidValues.indexOf(j1) > bidValues.indexOf(currentBid)) {
             // Update the current bid.
             currentBid = j1;
             // Display the current bid.
             console.log("Current bid: " + currentBid);
             row_1.innerText = j1;
-          } else {
-            // Display an error message if the bid is not higher than the current bid.
-            console.log("Invalid bid. Please make a higher bid.");
-            alert("Invalid bid. Please make a higher bid.")
-            k--;
-          }
+          // } else {
+          //   // Display an error message if the bid is not higher than the current bid.
+          //   console.log("Invalid bid. Please make a higher bid.");
+          //   alert("Invalid bid. Please make a higher bid.")
+          //   k--;
+          // }
         } else {
           // Display an error message if the bid is not valid.
          if(j1 == "X" || j1 == "XX" || j1 == "P" ){
@@ -2812,4 +2860,5 @@ ford.addEventListener('click', ()=>{
 console.log("this else part pevious");
 }
 })
+
 
