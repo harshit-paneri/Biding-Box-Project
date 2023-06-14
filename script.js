@@ -109,12 +109,12 @@ tree.addEventListener('click', ()=>{
 
    
 alertt.addEventListener('click', ()=>{
-    alert("Alerting message goes here");
+    alert("ALERT");
 })
 
 
 stop.addEventListener('click', ()=>{
-    alert("Stop Playing This Game");
+    alert("STOP");
 })
 
 w.addEventListener('click', ()=>{
